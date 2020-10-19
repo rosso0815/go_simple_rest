@@ -6,7 +6,7 @@ based on https://blog.codeship.com/building-minimal-docker-containers-for-go-app
 
 docker build -t golang_rest -f Dockerfile .
 
-docker run -it  -p 8080:8080 golang_rest
+docker run -it  -p 8080:8080 golang_rest -n golang_rest
 
 curl http://localhost:8080/info
 
